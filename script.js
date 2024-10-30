@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cartItem.innerHTML = `
         <span> ${item.name} - $${item.price} </span>`;
         cartItems.appendChild(cartItem);
-        totalPriceDisplay.textContent = `${totalPrice}`;
+        totalPriceDisplay.textContent = `${totalPrice.toFixed(2)}`;
       });
     } else {
       emptyCart.classList.remove("hidden");
