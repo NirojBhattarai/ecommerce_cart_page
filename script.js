@@ -71,9 +71,8 @@ document.addEventListener("DOMContentLoaded", () => {
         cartItem.classList.add("product");
 
         cartItem.innerHTML = `
-        <span> ${item.name} - $${item.price} 
-        <button data-id = ${item.id}>Delete Item </button>
-        </span>`;
+        <span> ${item.name} - $${item.price} </span>
+        <button data-id = ${item.id}>Delete Item </button>`;
 
         cartItems.appendChild(cartItem);
         totalPriceDisplay.textContent = `${totalPrice.toFixed(2)}`;
